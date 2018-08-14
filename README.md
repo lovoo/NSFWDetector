@@ -8,7 +8,7 @@ NSFWDetector is able to scan images for nudity. It was trained using CreateML to
 
 ## Usage
 
-```
+```swift
 guard #available(iOS 12.0, *), let detector = NSFWDetector.shared else {
     return
 }
