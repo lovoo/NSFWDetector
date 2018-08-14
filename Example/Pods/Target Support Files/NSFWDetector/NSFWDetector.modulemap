@@ -1,0 +1,6 @@
+framework module NSFWDetector {
+  umbrella header "NSFWDetector-umbrella.h"
+
+  export *
+  module * { export * }
+}
