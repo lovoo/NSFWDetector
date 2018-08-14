@@ -1,0 +1,25 @@
+{
+  "name": "NSFWDetector",
+  "version": "0.1.0",
+  "summary": "NSFW Content Detection aká porn detection with CoreML.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/absoluteheike/NSFWDetector",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "absoluteheike": "michael.berg@lovoo.com"
+  },
+  "source": {
+    "git": "https://github.com/absoluteheike/NSFWDetector.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "pod_target_xcconfig": {
+    "COREML_CODEGEN_LANGUAGE": "Swift"
+  },
+  "source_files": "NSFWDetector/Classes/**/*"
+}
