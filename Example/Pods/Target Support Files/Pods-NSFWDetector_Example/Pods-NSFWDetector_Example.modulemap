@@ -1,0 +1,6 @@
+framework module Pods_NSFWDetector_Example {
+  umbrella header "Pods-NSFWDetector_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

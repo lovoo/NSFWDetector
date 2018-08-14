@@ -1,0 +1,16 @@
+PODS:
+  - NSFWDetector (0.1.0)
+
+DEPENDENCIES:
+  - NSFWDetector (from `../`)
+
+EXTERNAL SOURCES:
+  NSFWDetector:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NSFWDetector: fff17eb334e428a618211a42d0d2da2a69f18a03
+
+PODFILE CHECKSUM: f9a9c6821210dfbaf2efbedd233ddc769e77db55
+
+COCOAPODS: 1.5.3
