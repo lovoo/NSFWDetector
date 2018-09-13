@@ -38,9 +38,13 @@ it, simply add the following line to your Podfile:
 pod 'NSFWDetector', :git => 'https://github.com/lovoo/NSFWDetector.git'
 ```
 
-## Using the Model
+## App Size
 
-Just download the MLModel file from the latest [Release](https://github.com/lovoo/NSFWDetector/releases)
+The Machine Learning Model is only **17 kB**, so App size won't be affected compared to other libraries using the [yahoo model](https://github.com/yahoo/open_nsfw).
+
+## Using just the Model
+
+If you don't want to use the Detection Code, you can also just download the MLModel file directly from the latest [Release](https://github.com/lovoo/NSFWDetector/releases).
 
 ## Author
 
