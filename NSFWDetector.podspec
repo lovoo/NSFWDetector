@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NSFWDetector'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'NSFW Content Detection aká porn detection with CoreML.'
   s.swift_version    = '4.0'
 
