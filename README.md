@@ -1,8 +1,8 @@
-# NSFWDetector
+# ![NSFWDetector](assets/header.png)
 
-[![Version](https://img.shields.io/cocoapods/v/NSFWDetector.svg?style=flat)](https://cocoapods.org/pods/NSFWDetector)
+<!-- [![Version](https://img.shields.io/cocoapods/v/NSFWDetector.svg?style=flat)](https://cocoapods.org/pods/NSFWDetector)
 [![License](https://img.shields.io/cocoapods/l/NSFWDetector.svg?style=flat)](https://cocoapods.org/pods/NSFWDetector)
-[![Platform](https://img.shields.io/cocoapods/p/NSFWDetector.svg?style=flat)](https://cocoapods.org/pods/NSFWDetector)
+[![Platform](https://img.shields.io/cocoapods/p/NSFWDetector.svg?style=flat)](https://cocoapods.org/pods/NSFWDetector) -->
 
 NSFWDetector is able to scan images for nudity. It was trained using CreateML to distinguish between porn/nudity and appropriate pictures. With the main focus on distinguishing between instagram model like pictures and porn.
 
@@ -40,15 +40,19 @@ pod 'NSFWDetector', :git => 'https://github.com/lovoo/NSFWDetector.git'
 
 ## App Size
 
-The Machine Learning Model is only **17 kB**, so App size won't be affected compared to other libraries using the [yahoo model](https://github.com/yahoo/open_nsfw).
+The Machine Learning Model is only **17 kB** in size, so App size won't be affected compared to other libraries using the [yahoo model](https://github.com/yahoo/open_nsfw).
 
 ## Using just the Model
 
 If you don't want to use the Detection Code, you can also just download the MLModel file directly from the latest [Release](https://github.com/lovoo/NSFWDetector/releases).
 
+## Feedback
+
+If you recognize issues with certain kind of pictures, feel free to reach out via [Mail](mailto:michael.berg@lovoo.com) or [Twitter](https://twitter.com/LOVOOEng).
+
 ## Author
 
-Michael Berg, michael.berg@lovoo.com
+Michael Berg, [michael.berg@lovoo.com](mailto:michael.berg@lovoo.com)
 
 ## License
 
