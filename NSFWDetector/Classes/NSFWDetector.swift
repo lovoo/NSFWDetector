@@ -32,7 +32,7 @@ public class NSFWDetector {
         case success(nsfwConfidence: Float)
     }
 
-    public func check(image: UIImage, qos: DispatchQoS.QoSClass = .default, completion: @escaping (_ result: DetectionResult) -> Void) {
+    public func check(image: UIImage, completion: @escaping (_ result: DetectionResult) -> Void) {
 
         // Create a requestHandler for the image
         let requestHandler: VNImageRequestHandler?
@@ -44,21 +44,21 @@ public class NSFWDetector {
             requestHandler = nil
         }
 
-        self.check(requestHandler, qos: qos, completion: completion)
+        self.check(requestHandler, completion: completion)
     }
 
-    public func check(cvPixelbuffer: CVPixelBuffer, qos: DispatchQoS.QoSClass = .default, completion: @escaping (_ result: DetectionResult) -> Void) {
+    public func check(cvPixelbuffer: CVPixelBuffer, completion: @escaping (_ result: DetectionResult) -> Void) {
 
         let requestHandler = VNImageRequestHandler(cvPixelBuffer: cvPixelbuffer, options: [:])
 
-        self.check(requestHandler, qos: qos, completion: completion)
+        self.check(requestHandler, completion: completion)
     }
 }
 
 @available(iOS 12.0, *)
 private extension NSFWDetector {
 
-    func check(_ requestHandler: VNImageRequestHandler?, qos: DispatchQoS.QoSClass, completion: @escaping (_ result: DetectionResult) -> Void) {
+    func check(_ requestHandler: VNImageRequestHandler?, completion: @escaping (_ result: DetectionResult) -> Void) {
 
         guard let requestHandler = requestHandler else {
             completion(.error(NSError(domain: "either cgImage nor ciImage must be set inside of UIImage", code: 0, userInfo: nil)))
@@ -68,28 +68,19 @@ private extension NSFWDetector {
         /// The request that handles the detection completion
         let request = VNCoreMLRequest(model: self.model, completionHandler: { (request, error) in
             guard let observations = request.results as? [VNClassificationObservation], let observation = observations.first(where: { $0.identifier == "NSFW" }) else {
-                DispatchQueue.main.async {
-                    completion(.error(NSError(domain: "Detection failed: No NSFW Observation found", code: 0, userInfo: nil)))
-                }
+                completion(.error(NSError(domain: "Detection failed: No NSFW Observation found", code: 0, userInfo: nil)))
 
                 return
             }
 
-            DispatchQueue.main.async {
-                completion(.success(nsfwConfidence: observation.confidence))
-            }
+            completion(.success(nsfwConfidence: observation.confidence))
         })
         
         /// Start the actual detection
-        DispatchQueue.global(qos: qos).async {
-
-            do {
-                try requestHandler.perform([request])
-            } catch {
-                DispatchQueue.main.async {
-                    completion(.error(NSError(domain: "Detection failed: No NSFW Observation found", code: 0, userInfo: nil)))
-                }
-            }
+        do {
+            try requestHandler.perform([request])
+        } catch {
+            completion(.error(NSError(domain: "Detection failed: No NSFW Observation found", code: 0, userInfo: nil)))
         }
     }
 }
