@@ -1,8 +1,8 @@
-# ![NSFWDetector](assets/header.png)
+# ![NSFWDetector](https://github.com/lovoo/NSFWDetector/blob/master/assets/header.png?raw=true)
 
-<!-- [![Version](https://img.shields.io/cocoapods/v/NSFWDetector.svg?style=flat)](https://cocoapods.org/pods/NSFWDetector)
+[![Version](https://img.shields.io/cocoapods/v/NSFWDetector.svg?style=flat)](https://cocoapods.org/pods/NSFWDetector)
 [![License](https://img.shields.io/cocoapods/l/NSFWDetector.svg?style=flat)](https://cocoapods.org/pods/NSFWDetector)
-[![Platform](https://img.shields.io/cocoapods/p/NSFWDetector.svg?style=flat)](https://cocoapods.org/pods/NSFWDetector) -->
+[![Platform](https://img.shields.io/cocoapods/p/NSFWDetector.svg?style=flat)](https://cocoapods.org/pods/NSFWDetector)
 
 NSFWDetector is able to scan images for nudity. It was trained using CreateML to distinguish between porn/nudity and appropriate pictures. With the main focus on distinguishing between instagram model like pictures and porn.
 
@@ -35,7 +35,7 @@ NSFWDetector is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'NSFWDetector', :git => 'https://github.com/lovoo/NSFWDetector.git'
+pod 'NSFWDetector'
 ```
 
 ## App Size
