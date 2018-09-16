@@ -9,6 +9,7 @@
 import UIKit
 import AVKit
 import NSFWDetector
+import Vision
 
 class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
@@ -17,13 +18,16 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     @IBOutlet weak var visualEffectsView: UIVisualEffectView!
     @IBOutlet weak var nsfwLabel: UILabel!
 
-    @IBOutlet weak var alarmView: UIView!
+    @IBOutlet weak var alarmView: UIVisualEffectView!
+    @IBOutlet weak var emojiView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.visualEffectsView.layer.cornerRadius = 10.0
         self.visualEffectsView.clipsToBounds = true
+
+        self.alarmView.isHidden = true
 
         setupCaptureSession()
     }
@@ -34,15 +38,15 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
             return
         }
 
-        NSFWDetector.shared.check(cvPixelbuffer: pixelBuffer, qos: .userInteractive, completion: { result in
+        NSFWDetector.shared.check(cvPixelbuffer: pixelBuffer) { [weak self] result in
 
-            switch result {
-            case let .success(nsfwConfidence: confidence):
-                self.didDetectNSFW(confidence: confidence)
-            case .error:
-                break
+            if case let .success(nsfwConfidence: confidence) = result {
+
+                DispatchQueue.main.async {
+                    self?.didDetectNSFW(confidence: confidence)
+                }
             }
-        })
+        }
     }
 
     private func didDetectNSFW(confidence: Float) {
@@ -53,14 +57,47 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                 return
             }
 
-            self.alarmView.isHidden = false
+            self.showAlarmView()
         } else {
             self.subsequentPositiveDetections = 0
 
-            self.alarmView.isHidden = true
+            self.hideAlarmView()
         }
 
         self.nsfwLabel.text = String(format: "%.1f %% porn", confidence * 100.0)
+    }
+
+    private func showAlarmView() {
+
+        guard self.alarmView.isHidden else {
+            return
+        }
+
+        self.alarmView.isHidden = false
+
+        self.alarmView.effect = nil
+        self.emojiView.alpha = 0.0
+
+        UIView.animate(withDuration: 0.3) {
+            self.alarmView.effect = UIBlurEffect(style: .light)
+            self.emojiView.alpha = 1.0
+        }
+    }
+
+    private func hideAlarmView() {
+        guard !self.alarmView.isHidden else {
+            return
+        }
+
+        UIView.animate(withDuration: 0.3, animations: {
+            self.alarmView.effect = nil
+            self.emojiView.alpha = 0.0
+        }) { finished in
+            if finished {
+                self.alarmView.isHidden = true
+                self.subsequentPositiveDetections = 0
+            }
+        }
     }
 }
 

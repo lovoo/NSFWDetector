@@ -93,12 +93,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view hidden="YES" alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggc-1h-raD" userLabel="AlertView">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3p-ox-zGu" userLabel="AlertView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <color key="backgroundColor" red="1" green="0.3822847519" blue="0.35196026409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Pre-xn-oeq">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😱" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gn-WZ-J7d">
+                                            <rect key="frame" x="8" y="8" width="359" height="796.33333333333337"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="240"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="7gn-WZ-J7d" firstAttribute="leading" secondItem="Pre-xn-oeq" secondAttribute="leading" constant="8" id="3ni-rA-hhF"/>
+                                        <constraint firstAttribute="bottom" secondItem="7gn-WZ-J7d" secondAttribute="bottom" constant="8" id="FtP-5O-lRq"/>
+                                        <constraint firstItem="7gn-WZ-J7d" firstAttribute="top" secondItem="Pre-xn-oeq" secondAttribute="top" constant="8" id="smz-JG-8R7"/>
+                                        <constraint firstAttribute="trailing" secondItem="7gn-WZ-J7d" secondAttribute="trailing" constant="8" id="ypn-EL-Cpf"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IR-Uj-INF">
-                                <rect key="frame" x="16" y="60" width="39" height="30"/>
+                                <rect key="frame" x="16" y="44" width="44" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Close"/>
                                 <connections>
                                     <segue destination="teB-tj-ZiY" kind="unwind" unwindAction="prepareForUnwindWithSegue:" id="l5h-7R-Mma"/>
@@ -130,18 +149,19 @@
                         </subviews>
                         <color key="backgroundColor" white="0.054608850671140942" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="9IR-Uj-INF" firstAttribute="top" secondItem="Rxo-7h-9PT" secondAttribute="bottom" constant="16" id="0Sf-q3-DE0"/>
-                            <constraint firstItem="ggc-1h-raD" firstAttribute="bottom" secondItem="KxU-WZ-pIb" secondAttribute="bottom" id="0ZQ-Vz-D3M"/>
+                            <constraint firstItem="9IR-Uj-INF" firstAttribute="top" secondItem="Rxo-7h-9PT" secondAttribute="bottom" id="0Sf-q3-DE0"/>
                             <constraint firstItem="9IR-Uj-INF" firstAttribute="leading" secondItem="KxU-WZ-pIb" secondAttribute="leading" constant="16" id="2Yt-tN-tYe"/>
-                            <constraint firstAttribute="trailing" secondItem="ggc-1h-raD" secondAttribute="trailing" id="WEW-WS-6tq"/>
-                            <constraint firstItem="ggc-1h-raD" firstAttribute="top" secondItem="KxU-WZ-pIb" secondAttribute="top" id="i6n-bi-lqn"/>
+                            <constraint firstItem="E3p-ox-zGu" firstAttribute="top" secondItem="KxU-WZ-pIb" secondAttribute="top" id="GEu-Pq-2rS"/>
+                            <constraint firstAttribute="trailing" secondItem="E3p-ox-zGu" secondAttribute="trailing" id="TwD-91-4oS"/>
                             <constraint firstItem="EfW-Q8-j7R" firstAttribute="centerX" secondItem="KxU-WZ-pIb" secondAttribute="centerX" id="qJZ-k3-Y4f"/>
-                            <constraint firstItem="ggc-1h-raD" firstAttribute="leading" secondItem="KxU-WZ-pIb" secondAttribute="leading" id="taC-PG-3PO"/>
+                            <constraint firstItem="E3p-ox-zGu" firstAttribute="bottom" secondItem="KxU-WZ-pIb" secondAttribute="bottom" id="vaC-CL-NMp"/>
+                            <constraint firstItem="E3p-ox-zGu" firstAttribute="leading" secondItem="KxU-WZ-pIb" secondAttribute="leading" id="xdu-bj-mOt"/>
                             <constraint firstItem="4ZI-a5-qUN" firstAttribute="top" secondItem="EfW-Q8-j7R" secondAttribute="bottom" constant="16" id="xy9-Wp-BIv"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="alarmView" destination="ggc-1h-raD" id="g5M-R6-9Lh"/>
+                        <outlet property="alarmView" destination="E3p-ox-zGu" id="JIX-RU-JLJ"/>
+                        <outlet property="emojiView" destination="7gn-WZ-J7d" id="UTU-tc-rmb"/>
                         <outlet property="nsfwLabel" destination="4ql-RQ-gFi" id="Uz2-1g-3GT"/>
                         <outlet property="visualEffectsView" destination="EfW-Q8-j7R" id="44S-1g-qRa"/>
                     </connections>
