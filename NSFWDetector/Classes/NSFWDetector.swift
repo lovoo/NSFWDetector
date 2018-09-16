@@ -16,9 +16,9 @@ public class NSFWDetector {
 
     private let model: VNCoreMLModel
 
-    public required init?() {
+    public required init() {
         guard let model = try? VNCoreMLModel(for: NSFW().model) else {
-            return nil
+            fatalError("NSFW should always be a valid model")
         }
         self.model = model
     }
@@ -29,24 +29,39 @@ public class NSFWDetector {
     /// - success: Detection was successful. `nsfwConfidence`: 0.0 for safe content - 1.0 for hardcore porn ;)
     public enum DetectionResult {
         case error(Error)
-        case success(nsfwConfidence: VNConfidence)
+        case success(nsfwConfidence: Float)
     }
 
     public func check(image: UIImage, qos: DispatchQoS.QoSClass = .default, completion: @escaping (_ result: DetectionResult) -> Void) {
 
         // Create a requestHandler for the image
-        let _requestHandler: VNImageRequestHandler?
+        let requestHandler: VNImageRequestHandler?
         if let cgImage = image.cgImage {
-            _requestHandler = VNImageRequestHandler(cgImage: cgImage, options: [:])
+            requestHandler = VNImageRequestHandler(cgImage: cgImage, options: [:])
         } else if let ciImage = image.ciImage {
-            _requestHandler = VNImageRequestHandler(ciImage: ciImage, options: [:])
+            requestHandler = VNImageRequestHandler(ciImage: ciImage, options: [:])
         } else {
-            _requestHandler = nil
+            requestHandler = nil
         }
 
-        guard let requestHandler = _requestHandler else {
-            completion(.error(NSError(domain: "either cgImage nor ciImage must be set inside of UIImage", code: 0, userInfo: nil)))
+        self.check(requestHandler, qos: qos, completion: completion)
+    }
 
+    public func check(cvPixelbuffer: CVPixelBuffer, qos: DispatchQoS.QoSClass = .default, completion: @escaping (_ result: DetectionResult) -> Void) {
+
+        let requestHandler = VNImageRequestHandler(cvPixelBuffer: cvPixelbuffer, options: [:])
+
+        self.check(requestHandler, qos: qos, completion: completion)
+    }
+}
+
+@available(iOS 12.0, *)
+private extension NSFWDetector {
+
+    func check(_ requestHandler: VNImageRequestHandler?, qos: DispatchQoS.QoSClass, completion: @escaping (_ result: DetectionResult) -> Void) {
+
+        guard let requestHandler = requestHandler else {
+            completion(.error(NSError(domain: "either cgImage nor ciImage must be set inside of UIImage", code: 0, userInfo: nil)))
             return
         }
 
@@ -64,7 +79,7 @@ public class NSFWDetector {
                 completion(.success(nsfwConfidence: observation.confidence))
             }
         })
-
+        
         /// Start the actual detection
         DispatchQueue.global(qos: qos).async {
 

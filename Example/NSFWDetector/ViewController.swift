@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  NSFWDetector
 //
-//  Created by absoluteheike on 08/12/2018.
-//  Copyright (c) 2018 absoluteheike. All rights reserved.
+//  Created by Michael Berg on 08/12/2018.
+//  Copyright (c) 2018 LOVOO. All rights reserved.
 //
 
 import UIKit
@@ -11,31 +11,49 @@ import NSFWDetector
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var photosButton: UIButton!
+    @IBOutlet weak var cameraButton: UIButton!
+
+    private var selectedImage: UIImage?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if #available(iOS 12.0, *) {
-
-            let image = UIImage()
-
-
-            guard #available(iOS 12.0, *), let detector = NSFWDetector.shared else {
-                return
-            }
-            detector.check(image: image, completion: { result in
-
-                switch result {
-                case let .success(nsfwConfidence: confidence):
-                    if confidence > 0.9 {
-                        // 😱🙈😏
-                    } else {
-                        // ¯\_(ツ)_/¯
-                    }
-                default:
-                    break
-                }
-            })
-        }
+        self.photosButton.layer.cornerRadius = 12.0
+        self.cameraButton.layer.cornerRadius = self.photosButton.layer.cornerRadius
     }
+
+    @IBAction func showImagePicker(_ sender: Any) {
+        let picker = UIImagePickerController()
+
+        picker.delegate = self
+        picker.sourceType = .photoLibrary
+
+        self.present(picker, animated: true, completion: nil)
+    }
+
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) { }
 }
 
+extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        guard let image = info[UIImagePickerControllerEditedImage] as? UIImage ?? info[UIImagePickerControllerOriginalImage] as? UIImage else {
+            return
+        }
+
+        self.selectedImage = image
+        picker.dismiss(animated: true) {
+            self.performSegue(withIdentifier: "ImageViewer", sender: self)
+        }
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "ImageViewer", let imageViewController = segue.destination.childViewControllers.first as? ImageViewController else {
+            return
+        }
+
+        imageViewController.image = self.selectedImage
+        self.selectedImage = nil
+    }
+}

@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  NSFWDetector
 //
-//  Created by absoluteheike on 08/12/2018.
-//  Copyright (c) 2018 absoluteheike. All rights reserved.
+//  Created by Michael Berg on 08/12/2018.
+//  Copyright (c) 2018 LOVOO. All rights reserved.
 //
 
 import UIKit
