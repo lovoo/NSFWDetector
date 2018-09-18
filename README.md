@@ -38,6 +38,8 @@ it, simply add the following line to your Podfile:
 pod 'NSFWDetector'
 ```
 
+⚠️ Because the model was trained with CreateML, you need **Xcode 10** and above to compile the project.
+
 ## App Size
 
 The Machine Learning Model is only **17 kB** in size, so App size won't be affected compared to other libraries using the [yahoo model](https://github.com/yahoo/open_nsfw).
