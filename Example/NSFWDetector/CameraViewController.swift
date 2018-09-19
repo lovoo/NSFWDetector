@@ -10,6 +10,7 @@ import UIKit
 import AVKit
 import NSFWDetector
 import Vision
+import AVKit
 
 class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
@@ -20,6 +21,13 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
 
     @IBOutlet weak var alarmView: UIVisualEffectView!
     @IBOutlet weak var emojiView: UIView!
+
+    private var player: AVPlayer?
+
+    deinit {
+        self.player?.pause()
+        self.player = nil
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,12 +90,23 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
             self.alarmView.effect = UIBlurEffect(style: .light)
             self.emojiView.alpha = 1.0
         }
+
+        guard let path = Bundle.main.path(forResource: "Wilhelm_Scream.ogg", ofType: "mp3") else {
+            return
+        }
+        self.player = AVPlayer(url: URL(fileURLWithPath: path))
+        self.player?.play()
+
+        self.player?.actionAtItemEnd = .pause
     }
 
     private func hideAlarmView() {
         guard !self.alarmView.isHidden else {
             return
         }
+
+        self.player?.pause()
+        self.player = nil
 
         UIView.animate(withDuration: 0.3, animations: {
             self.alarmView.effect = nil
