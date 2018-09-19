@@ -221,10 +221,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = KT48JMSBT8;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = KT48JMSBT8;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -481,11 +483,12 @@
 			baseConfigurationReference = 06B646A7AD50939DC189C2A7 /* Pods-NSFWDetector_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KT48JMSBT8;
 				INFOPLIST_FILE = NSFWDetector/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.absoluteheike.NSFWDetector-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -497,11 +500,12 @@
 			baseConfigurationReference = 576E1996DC60639A1A212C32 /* Pods-NSFWDetector_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KT48JMSBT8;
 				INFOPLIST_FILE = NSFWDetector/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.absoluteheike.NSFWDetector-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -512,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F12B89091D89F1EF999CDAF2 /* Pods-NSFWDetector_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = KT48JMSBT8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -534,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B9B2661F1AC51A0AEAE4A33 /* Pods-NSFWDetector_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = KT48JMSBT8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
