@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		72C8D6E021526DA2008AC0D0 /* Wilhelm_Scream.ogg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72C8D6DF21526DA2008AC0D0 /* Wilhelm_Scream.ogg.mp3 */; };
 		72CF15A121275D8500DA5C8D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF15A021275D8500DA5C8D /* CameraViewController.swift */; };
 		72CF15A5212C446800DA5C8D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CF15A4212C446800DA5C8D /* ImageViewController.swift */; };
 		A9B23BA8992A955A0357EFE1 /* Pods_NSFWDetector_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671CDE7C580EF5140827DAF9 /* Pods_NSFWDetector_Example.framework */; };
@@ -47,6 +48,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		671CDE7C580EF5140827DAF9 /* Pods_NSFWDetector_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSFWDetector_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72C8D6DF21526DA2008AC0D0 /* Wilhelm_Scream.ogg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wilhelm_Scream.ogg.mp3; sourceTree = "<group>"; };
 		72CF15A021275D8500DA5C8D /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		72CF15A4212C446800DA5C8D /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		D901F12ADFFD08DAE8156031 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				72C8D6DF21526DA2008AC0D0 /* Wilhelm_Scream.ogg.mp3 */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -254,6 +257,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				72C8D6E021526DA2008AC0D0 /* Wilhelm_Scream.ogg.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
