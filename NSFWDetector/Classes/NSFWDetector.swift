@@ -61,7 +61,7 @@ private extension NSFWDetector {
     func check(_ requestHandler: VNImageRequestHandler?, completion: @escaping (_ result: DetectionResult) -> Void) {
 
         guard let requestHandler = requestHandler else {
-            completion(.error(NSError(domain: "either cgImage nor ciImage must be set inside of UIImage", code: 0, userInfo: nil)))
+            completion(.error(NSError(domain: "either cgImage or ciImage must be set inside of UIImage", code: 0, userInfo: nil)))
             return
         }
 
