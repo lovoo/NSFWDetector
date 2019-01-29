@@ -37,8 +37,8 @@ class ViewController: UIViewController {
 
 extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        guard let image = info[UIImagePickerControllerEditedImage] as? UIImage ?? info[UIImagePickerControllerOriginalImage] as? UIImage else {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage ?? info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
             return
         }
 
@@ -49,7 +49,7 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "ImageViewer", let imageViewController = segue.destination.childViewControllers.first as? ImageViewController else {
+        guard segue.identifier == "ImageViewer", let imageViewController = segue.destination.children.first as? ImageViewController else {
             return
         }
 
