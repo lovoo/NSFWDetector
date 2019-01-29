@@ -7,39 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		085F82BC5A01431673B2BF862C4D4764 /* Pods-NSFWDetector_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4476FBE390D23171F8E45109291DACA3 /* Pods-NSFWDetector_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10906A96754187B3C4F8EDD6E64DAC6B /* NSFW.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCA508C5276F0D6F37E469361D7954 /* NSFW.mlmodel */; };
-		142F531CCB4CD6F392F6702B7EB0575E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		31B282BDC787F82FCE09AABCCDD8564A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		3AF9E2B13D5A8DF7101120F03089FDD1 /* Pods-NSFWDetector_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F020C598E66719881DD23E7C4B80E85E /* Pods-NSFWDetector_Example-dummy.m */; };
-		5C7E36266644DF9112A91F7675661B6B /* NSFWDetector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6377FE43EBEE064F1155E628FD8EC5 /* NSFWDetector-dummy.m */; };
-		80667970866684DEA2DDA224C969FEB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A3DC364E4E48BA8972C16593922E37E4 /* NSFWDetector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9EAC2B72D7E6900B6E05AA073BD8546 /* NSFWDetector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B257AA20AA44261B8F9A4E8B62F8243C /* NSFWDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0145ACD138AF7AF970470504934DCC /* NSFWDetector.swift */; };
-		D015B1DAE7B9C6F4D96D7196CAAA02A3 /* Pods-NSFWDetector_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8C8A2B70F578E9C6A8FFE4213AA7A4 /* Pods-NSFWDetector_Tests-dummy.m */; };
-		E110BEB778B821F99BA91A6CEF7FD269 /* Pods-NSFWDetector_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93C1AAB7CE3EB9AAE770F71C92CCEDDD /* Pods-NSFWDetector_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		058DA4F164365B0F9E9AEE04DDB5B784 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		1C9B832CAA1A122C1406698A4108CF2C /* NSFWDetector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9EAC2B72D7E6900B6E05AA073BD8546 /* NSFWDetector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		447F9E6D28B90CEBB3A345BBDD347794 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		48CBEDC485DC41F18136676740383A9D /* Pods-NSFWDetector_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4476FBE390D23171F8E45109291DACA3 /* Pods-NSFWDetector_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4996BADF92A43AA6744573D6192C21C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		4B56C07A94AE579E5E37768CA42110A7 /* Pods-NSFWDetector_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8C8A2B70F578E9C6A8FFE4213AA7A4 /* Pods-NSFWDetector_Tests-dummy.m */; };
+		5D8D2FF54D91A7A1C8DC8148C94B5E18 /* NSFW.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0FDCA508C5276F0D6F37E469361D7954 /* NSFW.mlmodel */; };
+		753BF02173B78BCD20FDB46BF569DA92 /* NSFWDetector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6377FE43EBEE064F1155E628FD8EC5 /* NSFWDetector-dummy.m */; };
+		A88F3068E4D9A55B8654589F2CFC2763 /* NSFWDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0145ACD138AF7AF970470504934DCC /* NSFWDetector.swift */; };
+		D6F636C9B6DE5CA559693A05F6654E9F /* Pods-NSFWDetector_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F020C598E66719881DD23E7C4B80E85E /* Pods-NSFWDetector_Example-dummy.m */; };
+		F754DD38791AA3C60AAE90400FEA392C /* Pods-NSFWDetector_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93C1AAB7CE3EB9AAE770F71C92CCEDDD /* Pods-NSFWDetector_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		303544D6BC54ADF73D111406E842331D /* PBXContainerItemProxy */ = {
+		8B5CF2DD7891413F51523A60DBD658F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D9A52C55599BD64069954CFBE76FF97A;
+			remoteGlobalIDString = CCB01C32DA2F6F5A5909511EF5102C35;
 			remoteInfo = "Pods-NSFWDetector_Example";
 		};
-		C0C17802379E7779083A997B3F0799FA /* PBXContainerItemProxy */ = {
+		ECBDF2E4306AE5316AE4566289C35DA5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CE62AF862199C49254C00AF4625914D5;
+			remoteGlobalIDString = 31483F0FD303E196812D264EB6E24D35;
 			remoteInfo = NSFWDetector;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0E6377FE43EBEE064F1155E628FD8EC5 /* NSFWDetector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSFWDetector-dummy.m"; sourceTree = "<group>"; };
-		0FDCA508C5276F0D6F37E469361D7954 /* NSFW.mlmodel */ = {isa = PBXFileReference; includeInIndex = 1; name = NSFW.mlmodel; path = NSFWDetector/Classes/NSFW.mlmodel; sourceTree = "<group>"; };
+		0FDCA508C5276F0D6F37E469361D7954 /* NSFW.mlmodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.mlmodel; name = NSFW.mlmodel; path = NSFWDetector/Classes/NSFW.mlmodel; sourceTree = "<group>"; };
 		20FA1DBEE5C0884926A3ECE2ED7AE45A /* Pods-NSFWDetector_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NSFWDetector_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		21C268F6CF5F76DFA73799FA11DBB542 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F0145ACD138AF7AF970470504934DCC /* NSFWDetector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSFWDetector.swift; path = NSFWDetector/Classes/NSFWDetector.swift; sourceTree = "<group>"; };
@@ -47,57 +47,57 @@
 		4476FBE390D23171F8E45109291DACA3 /* Pods-NSFWDetector_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NSFWDetector_Example-umbrella.h"; sourceTree = "<group>"; };
 		4B2818E3E6F16E11A70A4D4DDC26059B /* Pods-NSFWDetector_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NSFWDetector_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5DF00F5E7DBCC533E3523FEA6DF6A99C /* Pods-NSFWDetector_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NSFWDetector_Example-resources.sh"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		826E9CFC27A4EF86FB8C893D1706E9FF /* NSFWDetector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NSFWDetector.modulemap; sourceTree = "<group>"; };
-		869A6A380E055C3841ECAF8A28C80836 /* Pods_NSFWDetector_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NSFWDetector_Example.framework; path = "Pods-NSFWDetector_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		869A6A380E055C3841ECAF8A28C80836 /* Pods_NSFWDetector_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSFWDetector_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BAAF73172BD7D5E9D5D18FBBD4640AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91A362C3ED42F5A100854E8A10D75ED6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		91A362C3ED42F5A100854E8A10D75ED6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93C1AAB7CE3EB9AAE770F71C92CCEDDD /* Pods-NSFWDetector_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NSFWDetector_Tests-umbrella.h"; sourceTree = "<group>"; };
 		A00602ADBA0723ED3C1DF11E74EBD21D /* Pods-NSFWDetector_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NSFWDetector_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A12FB21A4788E71F807148DE20A5B73F /* Pods-NSFWDetector_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NSFWDetector_Example.modulemap"; sourceTree = "<group>"; };
 		A4B86905320947DD288F3B825F23E43E /* Pods-NSFWDetector_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NSFWDetector_Tests-resources.sh"; sourceTree = "<group>"; };
-		A65B30A8AC831DC07EFD8EF9E23AEF22 /* NSFWDetector.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = NSFWDetector.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A65B30A8AC831DC07EFD8EF9E23AEF22 /* NSFWDetector.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = NSFWDetector.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA8C8A2B70F578E9C6A8FFE4213AA7A4 /* Pods-NSFWDetector_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NSFWDetector_Tests-dummy.m"; sourceTree = "<group>"; };
 		AE5ED4392211E6EEA88D73F9F07631B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5F592582751720B5A41E8B1F3B4D050 /* Pods-NSFWDetector_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NSFWDetector_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B69884811402406E84C0ED2644B6C2EA /* Pods-NSFWDetector_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NSFWDetector_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BDBAFDBA2EF0D83A177D050B45E73260 /* NSFWDetector.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NSFWDetector.xcconfig; sourceTree = "<group>"; };
 		BDD8805BA71D6D3B2B8F2A9E1B77D491 /* Pods-NSFWDetector_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NSFWDetector_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C9DCA20FC4D25826D43F045E791ED7E0 /* NSFWDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NSFWDetector.framework; path = NSFWDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D01FF1DD663A1BC147F9995E4C6B7630 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C9DCA20FC4D25826D43F045E791ED7E0 /* NSFWDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSFWDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D01FF1DD663A1BC147F9995E4C6B7630 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D1BD50EA8994D4C7E15DC855D3772E61 /* NSFWDetector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSFWDetector-prefix.pch"; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DAF5CCBC36B94DCADC848EAC7BC1B5E8 /* Pods-NSFWDetector_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NSFWDetector_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E6D48D7DD019B5FE8DE66C480742BDF4 /* Pods-NSFWDetector_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NSFWDetector_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		EEF25B843A87922F30AE1D08D800A60C /* Pods-NSFWDetector_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NSFWDetector_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F020C598E66719881DD23E7C4B80E85E /* Pods-NSFWDetector_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NSFWDetector_Example-dummy.m"; sourceTree = "<group>"; };
-		F24A8389209A90173F4DE430A9432A91 /* Pods_NSFWDetector_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NSFWDetector_Tests.framework; path = "Pods-NSFWDetector_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F24A8389209A90173F4DE430A9432A91 /* Pods_NSFWDetector_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSFWDetector_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9EAC2B72D7E6900B6E05AA073BD8546 /* NSFWDetector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSFWDetector-umbrella.h"; sourceTree = "<group>"; };
 		FAA74F891B26FB51AA20A73177812646 /* Pods-NSFWDetector_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NSFWDetector_Example-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		33BDF3CB4F89ED3D75E968A214B3056D /* Frameworks */ = {
+		856FB259F564B47E504DA8ACCB3237C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				142F531CCB4CD6F392F6702B7EB0575E /* Foundation.framework in Frameworks */,
+				4996BADF92A43AA6744573D6192C21C0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8468213937D6531F8CDEFEEA3DC6124 /* Frameworks */ = {
+		A3F08E91F5AE6F6307DD8F10F20B034B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31B282BDC787F82FCE09AABCCDD8564A /* Foundation.framework in Frameworks */,
+				058DA4F164365B0F9E9AEE04DDB5B784 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAF4A62225F6B869B43EA788CFC193C8 /* Frameworks */ = {
+		FFCA68AA6DF9D7D5FB1069D2031852E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80667970866684DEA2DDA224C969FEB7 /* Foundation.framework in Frameworks */,
+				447F9E6D28B90CEBB3A345BBDD347794 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +149,14 @@
 			path = "Target Support Files/Pods-NSFWDetector_Tests";
 			sourceTree = "<group>";
 		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		5CEE786571BD8C7295C308C43B534A1A /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,7 +205,7 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				44D5347904CF754D6785B84253F2574A /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -222,69 +230,44 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4FE1568B61BDB261B2DF8C9EC5FF37BF /* Headers */ = {
+		9571647B8A307C081F7D8E8C69C1B86D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E110BEB778B821F99BA91A6CEF7FD269 /* Pods-NSFWDetector_Tests-umbrella.h in Headers */,
+				48CBEDC485DC41F18136676740383A9D /* Pods-NSFWDetector_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8662C05B8FC8A00D160900C1BD7EC0D9 /* Headers */ = {
+		B096D1923AAC5AB660F638E364BEE299 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				085F82BC5A01431673B2BF862C4D4764 /* Pods-NSFWDetector_Example-umbrella.h in Headers */,
+				F754DD38791AA3C60AAE90400FEA392C /* Pods-NSFWDetector_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E4A65F7F8BF9B46863AEBFF19633866E /* Headers */ = {
+		BBFC2EF26945CA6FB094E3B131C13852 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3DC364E4E48BA8972C16593922E37E4 /* NSFWDetector-umbrella.h in Headers */,
+				1C9B832CAA1A122C1406698A4108CF2C /* NSFWDetector-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		547A8736D7A356EC6738C03132C50600 /* Pods-NSFWDetector_Tests */ = {
+		31483F0FD303E196812D264EB6E24D35 /* NSFWDetector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 526F5AB24FE4AFF040E2B7782D68625E /* Build configuration list for PBXNativeTarget "Pods-NSFWDetector_Tests" */;
+			buildConfigurationList = 33A53F18C01F4767CB35015A1FD26D13 /* Build configuration list for PBXNativeTarget "NSFWDetector" */;
 			buildPhases = (
-				18855ADC9F3D46A216B105E58FD4779F /* Sources */,
-				FAF4A62225F6B869B43EA788CFC193C8 /* Frameworks */,
-				4FE1568B61BDB261B2DF8C9EC5FF37BF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F95DF0DEF9A16C5FF8259F641A02D03D /* PBXTargetDependency */,
-			);
-			name = "Pods-NSFWDetector_Tests";
-			productName = "Pods-NSFWDetector_Tests";
-			productReference = F24A8389209A90173F4DE430A9432A91 /* Pods_NSFWDetector_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CE62AF862199C49254C00AF4625914D5 /* NSFWDetector */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B111BD30B57C86FF99018000B9ECF219 /* Build configuration list for PBXNativeTarget "NSFWDetector" */;
-			buildPhases = (
-				C3AD794CB1928073D4783501C9355AFC /* Sources */,
-				D8468213937D6531F8CDEFEEA3DC6124 /* Frameworks */,
-				E4A65F7F8BF9B46863AEBFF19633866E /* Headers */,
+				BBFC2EF26945CA6FB094E3B131C13852 /* Headers */,
+				85ABB991A6B412E19CAE851E7175C7D2 /* Sources */,
+				FFCA68AA6DF9D7D5FB1069D2031852E8 /* Frameworks */,
+				16DEC2259C752EF38588AA30A3D59CA0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -295,18 +278,38 @@
 			productReference = C9DCA20FC4D25826D43F045E791ED7E0 /* NSFWDetector.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D9A52C55599BD64069954CFBE76FF97A /* Pods-NSFWDetector_Example */ = {
+		68FF7D8D768DA03F68A18B594B4E4800 /* Pods-NSFWDetector_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E641B1781794A0AA155FCBBB783F56D /* Build configuration list for PBXNativeTarget "Pods-NSFWDetector_Example" */;
+			buildConfigurationList = DB550EF442FE9CB2EE30647921C990E4 /* Build configuration list for PBXNativeTarget "Pods-NSFWDetector_Tests" */;
 			buildPhases = (
-				540DCA6BE9447A577A3D09469202FA45 /* Sources */,
-				33BDF3CB4F89ED3D75E968A214B3056D /* Frameworks */,
-				8662C05B8FC8A00D160900C1BD7EC0D9 /* Headers */,
+				B096D1923AAC5AB660F638E364BEE299 /* Headers */,
+				ED7BF75FF233987D7A4FDA922BED4A57 /* Sources */,
+				A3F08E91F5AE6F6307DD8F10F20B034B /* Frameworks */,
+				2E6714C817C75F6ED54A86078C5444A4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2ADB355F5F82A1256D042EB02C416D6B /* PBXTargetDependency */,
+				EBB6E45D8256920C22C60DFB3209FFD3 /* PBXTargetDependency */,
+			);
+			name = "Pods-NSFWDetector_Tests";
+			productName = "Pods-NSFWDetector_Tests";
+			productReference = F24A8389209A90173F4DE430A9432A91 /* Pods_NSFWDetector_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CCB01C32DA2F6F5A5909511EF5102C35 /* Pods-NSFWDetector_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB441AC04107E381509202E7782137EB /* Build configuration list for PBXNativeTarget "Pods-NSFWDetector_Example" */;
+			buildPhases = (
+				9571647B8A307C081F7D8E8C69C1B86D /* Headers */,
+				CA33093B868ED13E4F0B55A3388A4E3E /* Sources */,
+				856FB259F564B47E504DA8ACCB3237C7 /* Frameworks */,
+				79341239CF632D1AB0081B983256D86F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C8E10FCF63AE2C5C29AF1A7F06D3009 /* PBXTargetDependency */,
 			);
 			name = "Pods-NSFWDetector_Example";
 			productName = "Pods-NSFWDetector_Example";
@@ -334,59 +337,183 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE62AF862199C49254C00AF4625914D5 /* NSFWDetector */,
-				D9A52C55599BD64069954CFBE76FF97A /* Pods-NSFWDetector_Example */,
-				547A8736D7A356EC6738C03132C50600 /* Pods-NSFWDetector_Tests */,
+				31483F0FD303E196812D264EB6E24D35 /* NSFWDetector */,
+				CCB01C32DA2F6F5A5909511EF5102C35 /* Pods-NSFWDetector_Example */,
+				68FF7D8D768DA03F68A18B594B4E4800 /* Pods-NSFWDetector_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		16DEC2259C752EF38588AA30A3D59CA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E6714C817C75F6ED54A86078C5444A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79341239CF632D1AB0081B983256D86F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		18855ADC9F3D46A216B105E58FD4779F /* Sources */ = {
+		85ABB991A6B412E19CAE851E7175C7D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D015B1DAE7B9C6F4D96D7196CAAA02A3 /* Pods-NSFWDetector_Tests-dummy.m in Sources */,
+				5D8D2FF54D91A7A1C8DC8148C94B5E18 /* NSFW.mlmodel in Sources */,
+				753BF02173B78BCD20FDB46BF569DA92 /* NSFWDetector-dummy.m in Sources */,
+				A88F3068E4D9A55B8654589F2CFC2763 /* NSFWDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		540DCA6BE9447A577A3D09469202FA45 /* Sources */ = {
+		CA33093B868ED13E4F0B55A3388A4E3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF9E2B13D5A8DF7101120F03089FDD1 /* Pods-NSFWDetector_Example-dummy.m in Sources */,
+				D6F636C9B6DE5CA559693A05F6654E9F /* Pods-NSFWDetector_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3AD794CB1928073D4783501C9355AFC /* Sources */ = {
+		ED7BF75FF233987D7A4FDA922BED4A57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10906A96754187B3C4F8EDD6E64DAC6B /* NSFW.mlmodel in Sources */,
-				5C7E36266644DF9112A91F7675661B6B /* NSFWDetector-dummy.m in Sources */,
-				B257AA20AA44261B8F9A4E8B62F8243C /* NSFWDetector.swift in Sources */,
+				4B56C07A94AE579E5E37768CA42110A7 /* Pods-NSFWDetector_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2ADB355F5F82A1256D042EB02C416D6B /* PBXTargetDependency */ = {
+		7C8E10FCF63AE2C5C29AF1A7F06D3009 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NSFWDetector;
-			target = CE62AF862199C49254C00AF4625914D5 /* NSFWDetector */;
-			targetProxy = C0C17802379E7779083A997B3F0799FA /* PBXContainerItemProxy */;
+			target = 31483F0FD303E196812D264EB6E24D35 /* NSFWDetector */;
+			targetProxy = ECBDF2E4306AE5316AE4566289C35DA5 /* PBXContainerItemProxy */;
 		};
-		F95DF0DEF9A16C5FF8259F641A02D03D /* PBXTargetDependency */ = {
+		EBB6E45D8256920C22C60DFB3209FFD3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-NSFWDetector_Example";
-			target = D9A52C55599BD64069954CFBE76FF97A /* Pods-NSFWDetector_Example */;
-			targetProxy = 303544D6BC54ADF73D111406E842331D /* PBXContainerItemProxy */;
+			target = CCB01C32DA2F6F5A5909511EF5102C35 /* Pods-NSFWDetector_Example */;
+			targetProxy = 8B5CF2DD7891413F51523A60DBD658F3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0E12B7268EF0862DFEEB8B6B0BD7C9F4 /* Debug */ = {
+		124D7E180F2D932C981E24123FC7B0EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDBAFDBA2EF0D83A177D050B45E73260 /* NSFWDetector.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NSFWDetector/NSFWDetector-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NSFWDetector/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NSFWDetector/NSFWDetector.modulemap";
+				PRODUCT_MODULE_NAME = NSFWDetector;
+				PRODUCT_NAME = NSFWDetector;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1640CBE5E2E7A6BBD7198C689E2463EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A00602ADBA0723ED3C1DF11E74EBD21D /* Pods-NSFWDetector_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NSFWDetector_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NSFWDetector_Tests/Pods-NSFWDetector_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3954258C436B697C6BCC8024D283D267 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEF25B843A87922F30AE1D08D800A60C /* Pods-NSFWDetector_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NSFWDetector_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NSFWDetector_Example/Pods-NSFWDetector_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		98E98810EEEB96C99CB95CB91F4ADE0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -440,16 +567,19 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		132B0222E0FC0AFFE9488E3AADFD7790 /* Release */ = {
+		A4060EB25D43CABD610B9ACD159C8B0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DAF5CCBC36B94DCADC848EAC7BC1B5E8 /* Pods-NSFWDetector_Example.release.xcconfig */;
 			buildSettings = {
@@ -477,7 +607,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -485,107 +614,7 @@
 			};
 			name = Release;
 		};
-		1BD9F4DA7327F970FDD66A529E56E41B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A00602ADBA0723ED3C1DF11E74EBD21D /* Pods-NSFWDetector_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NSFWDetector_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NSFWDetector_Tests/Pods-NSFWDetector_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		51F14B60919012F4473A7263AE482B83 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDBAFDBA2EF0D83A177D050B45E73260 /* NSFWDetector.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NSFWDetector/NSFWDetector-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NSFWDetector/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NSFWDetector/NSFWDetector.modulemap";
-				PRODUCT_MODULE_NAME = NSFWDetector;
-				PRODUCT_NAME = NSFWDetector;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		870F1E421AAC6FAF782A88A9EE232940 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDBAFDBA2EF0D83A177D050B45E73260 /* NSFWDetector.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NSFWDetector/NSFWDetector-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NSFWDetector/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NSFWDetector/NSFWDetector.modulemap";
-				PRODUCT_MODULE_NAME = NSFWDetector;
-				PRODUCT_NAME = NSFWDetector;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C06F35407363115AA17F474A5203B21F /* Debug */ = {
+		B6A6E76DBE541A734C39CE77A84B0971 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BDD8805BA71D6D3B2B8F2A9E1B77D491 /* Pods-NSFWDetector_Tests.debug.xcconfig */;
 			buildSettings = {
@@ -619,7 +648,7 @@
 			};
 			name = Debug;
 		};
-		CD8324D57CD462761E218EEA4EA91EC7 /* Release */ = {
+		B97A7F6ACE1216BB5A2307CA83FC93C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -671,18 +700,19 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		EA5F251949C04F5CE29E4913243EBD6A /* Debug */ = {
+		EE7D73C4A3BA68935ED530869DA2D203 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEF25B843A87922F30AE1D08D800A60C /* Pods-NSFWDetector_Example.debug.xcconfig */;
+			baseConfigurationReference = BDBAFDBA2EF0D83A177D050B45E73260 /* NSFWDetector.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -692,26 +722,24 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-NSFWDetector_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/NSFWDetector/NSFWDetector-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NSFWDetector/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NSFWDetector_Example/Pods-NSFWDetector_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/NSFWDetector/NSFWDetector.modulemap";
+				PRODUCT_MODULE_NAME = NSFWDetector;
+				PRODUCT_NAME = NSFWDetector;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -719,35 +747,35 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0E12B7268EF0862DFEEB8B6B0BD7C9F4 /* Debug */,
-				CD8324D57CD462761E218EEA4EA91EC7 /* Release */,
+				98E98810EEEB96C99CB95CB91F4ADE0A /* Debug */,
+				B97A7F6ACE1216BB5A2307CA83FC93C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		526F5AB24FE4AFF040E2B7782D68625E /* Build configuration list for PBXNativeTarget "Pods-NSFWDetector_Tests" */ = {
+		33A53F18C01F4767CB35015A1FD26D13 /* Build configuration list for PBXNativeTarget "NSFWDetector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C06F35407363115AA17F474A5203B21F /* Debug */,
-				1BD9F4DA7327F970FDD66A529E56E41B /* Release */,
+				124D7E180F2D932C981E24123FC7B0EF /* Debug */,
+				EE7D73C4A3BA68935ED530869DA2D203 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E641B1781794A0AA155FCBBB783F56D /* Build configuration list for PBXNativeTarget "Pods-NSFWDetector_Example" */ = {
+		CB441AC04107E381509202E7782137EB /* Build configuration list for PBXNativeTarget "Pods-NSFWDetector_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA5F251949C04F5CE29E4913243EBD6A /* Debug */,
-				132B0222E0FC0AFFE9488E3AADFD7790 /* Release */,
+				3954258C436B697C6BCC8024D283D267 /* Debug */,
+				A4060EB25D43CABD610B9ACD159C8B0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B111BD30B57C86FF99018000B9ECF219 /* Build configuration list for PBXNativeTarget "NSFWDetector" */ = {
+		DB550EF442FE9CB2EE30647921C990E4 /* Build configuration list for PBXNativeTarget "Pods-NSFWDetector_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				870F1E421AAC6FAF782A88A9EE232940 /* Debug */,
-				51F14B60919012F4473A7263AE482B83 /* Release */,
+				B6A6E76DBE541A734C39CE77A84B0971 /* Debug */,
+				1640CBE5E2E7A6BBD7198C689E2463EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
