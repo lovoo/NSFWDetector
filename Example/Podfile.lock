@@ -1,5 +1,5 @@
 PODS:
-  - NSFWDetector (1.1.0)
+  - NSFWDetector (2.0.0)
 
 DEPENDENCIES:
   - NSFWDetector (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  NSFWDetector: 5158164f5e716652aa61cfa92dc7b252a6883415
+  NSFWDetector: 6847237b1f515548fce78027274d85ee37fa390a
 
 PODFILE CHECKSUM: f9a9c6821210dfbaf2efbedd233ddc769e77db55
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.10.2
