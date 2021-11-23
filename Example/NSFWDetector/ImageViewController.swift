@@ -24,14 +24,14 @@ class ImageViewController: UIViewController {
         self.blurView.layer.cornerRadius = 10.0
         self.blurView.clipsToBounds = true
 
-        guard let image = self.image else {
+        guard let image = self.image, let cgImage = image.cgImage else {
             self.nsfwLabel.text = "No Image selected."
             return
         }
 
         self.imageView.image = image
 
-        NSFWDetector.shared.check(image: image) { result in
+        NSFWDetector.shared.check(cgImage: cgImage) { result in
             switch result {
             case .error:
                 self.nsfwLabel.text = "Detection failed"

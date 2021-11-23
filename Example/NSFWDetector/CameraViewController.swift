@@ -58,7 +58,7 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     }
 
     private func didDetectNSFW(confidence: Float) {
-        if confidence > 0.8 {
+        if confidence > 0.9 {
             self.subsequentPositiveDetections += 1
 
             guard self.subsequentPositiveDetections > 3 else {

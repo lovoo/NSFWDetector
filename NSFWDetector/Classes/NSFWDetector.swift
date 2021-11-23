@@ -9,7 +9,6 @@ import Foundation
 import CoreML
 import Vision
 
-@available(iOS 12.0, *)
 public class NSFWDetector {
 
     public static let shared = NSFWDetector()
@@ -17,7 +16,7 @@ public class NSFWDetector {
     private let model: VNCoreMLModel
 
     public required init() {
-        guard let model = try? VNCoreMLModel(for: NSFW().model) else {
+        guard let model = try? VNCoreMLModel(for: NSFW(configuration: MLModelConfiguration()).model) else {
             fatalError("NSFW should always be a valid model")
         }
         self.model = model
@@ -32,38 +31,28 @@ public class NSFWDetector {
         case success(nsfwConfidence: Float)
     }
 
-    public func check(image: UIImage, completion: @escaping (_ result: DetectionResult) -> Void) {
+    public func check(cgImage: CGImage, completion: @escaping (_ result: DetectionResult) -> Void) {
 
-        // Create a requestHandler for the image
-        let requestHandler: VNImageRequestHandler?
-        if let cgImage = image.cgImage {
-            requestHandler = VNImageRequestHandler(cgImage: cgImage, options: [:])
-        } else if let ciImage = image.ciImage {
-            requestHandler = VNImageRequestHandler(ciImage: ciImage, options: [:])
-        } else {
-            requestHandler = nil
-        }
-
+        let requestHandler = VNImageRequestHandler(cgImage: cgImage, options: [:])
         self.check(requestHandler, completion: completion)
     }
 
     public func check(cvPixelbuffer: CVPixelBuffer, completion: @escaping (_ result: DetectionResult) -> Void) {
 
         let requestHandler = VNImageRequestHandler(cvPixelBuffer: cvPixelbuffer, options: [:])
+        self.check(requestHandler, completion: completion)
+    }
 
+    public func check(ciImage: CIImage, completion: @escaping (_ result: DetectionResult) -> Void) {
+
+        let requestHandler = VNImageRequestHandler(ciImage: ciImage, options: [:])
         self.check(requestHandler, completion: completion)
     }
 }
 
-@available(iOS 12.0, *)
 private extension NSFWDetector {
 
-    func check(_ requestHandler: VNImageRequestHandler?, completion: @escaping (_ result: DetectionResult) -> Void) {
-
-        guard let requestHandler = requestHandler else {
-            completion(.error(NSError(domain: "either cgImage or ciImage must be set inside of UIImage", code: 0, userInfo: nil)))
-            return
-        }
+    func check(_ requestHandler: VNImageRequestHandler, completion: @escaping (_ result: DetectionResult) -> Void) {
 
         /// The request that handles the detection completion
         let request = VNCoreMLRequest(model: self.model, completionHandler: { (request, error) in

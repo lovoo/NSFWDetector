@@ -9,11 +9,11 @@ NSFWDetector is a small (**17 kB**) CoreML Model to scan images for nudity. It w
 ## Usage
 
 ```swift
-guard #available(iOS 12.0, *), let detector = NSFWDetector.shared else {
+guard let detector = NSFWDetector.shared else {
     return
 }
 
-detector.check(image: image, completion: { result in
+detector.check(cgImage: image, completion: { result in
     switch result {
     case let .success(nsfwConfidence: confidence):
         if confidence > 0.9 {
@@ -38,8 +38,6 @@ it, simply add the following line to your Podfile:
 pod 'NSFWDetector'
 ```
 
-⚠️ Because the model was trained with CreateML, you need **Xcode 10** and above to compile the project.
-
 ## App Size
 
 The Machine Learning Model is only **17 kB** in size, so App size won't be affected compared to other libraries using the [yahoo model](https://github.com/yahoo/open_nsfw).
@@ -47,6 +45,10 @@ The Machine Learning Model is only **17 kB** in size, so App size won't be affec
 ## Using just the Model
 
 If you don't want to use the Detection Code, you can also just download the MLModel file directly from the latest [Release](https://github.com/lovoo/NSFWDetector/releases).
+
+## Training Data
+
+V2 uses data out of [NudeNet_v1](https://archive.org/details/NudeNet_classifier_dataset_v1)
 
 ## Feedback
 
