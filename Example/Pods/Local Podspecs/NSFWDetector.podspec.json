@@ -1,8 +1,8 @@
 {
   "name": "NSFWDetector",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "summary": "NSFW Content Detection aká porn detection with CoreML.",
-  "swift_version": "4.0",
+  "swift_versions": "5.0",
   "description": "Lightweight Library for scanning images for NSFW (Not Safe For Work) content.",
   "homepage": "https://github.com/lovoo/NSFWDetector",
   "license": {
@@ -14,13 +14,14 @@
   },
   "source": {
     "git": "https://github.com/lovoo/NSFWDetector.git",
-    "tag": "1.1.0"
+    "tag": "1.1.2"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "12.0"
   },
   "pod_target_xcconfig": {
     "COREML_CODEGEN_LANGUAGE": "Swift"
   },
-  "source_files": "NSFWDetector/Classes/**/*"
+  "source_files": "NSFWDetector/Classes/**/*",
+  "swift_version": "5.0"
 }
