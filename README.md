@@ -30,10 +30,14 @@ detector.check(image: image, completion: { result in
 If you want to enforce stricter boundaries for your platform, just apply a lower threshold for the confidence.
 
 ## Installation
+### Swift Package Manager
+```swift
+dependencies: [
+    .package(url: "https://github.com/lovoo/NSFWDetector.git", .upToNextMajor(from: "1.1.2"))
+]
+```
 
-NSFWDetector is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
+### Cocoapods
 ```ruby
 pod 'NSFWDetector'
 ```

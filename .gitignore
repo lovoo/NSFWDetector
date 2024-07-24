@@ -11,3 +11,6 @@
 *.xccheckout
 *.xcscmblueprint
 xcuserdata/
+
+# SwiftPM
+.swiftpm

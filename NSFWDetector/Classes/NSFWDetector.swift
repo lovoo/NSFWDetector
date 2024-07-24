@@ -8,6 +8,7 @@
 import Foundation
 import CoreML
 import Vision
+import UIKit
 
 @available(iOS 12.0, *)
 public class NSFWDetector {
