@@ -32,6 +32,22 @@ public class NSFWDetector {
         case error(Error)
         case success(nsfwConfidence: Float)
     }
+    
+    /// Checks an image for NSFW content
+    /// - Parameter image: the image to be checked for NSFW content
+    /// - Returns: the NSFW confidence level, where 0.0 for safe content - 1.0 for NSFW content
+    public func check(image: UIImage) async throws -> Float {
+        try await withCheckedThrowingContinuation { continuation in
+            check(image: image) { result in
+                switch result {
+                case .error(let error):
+                    continuation.resume(throwing: error)
+                case .success(let nsfwConfidence):
+                    continuation.resume(returning: nsfwConfidence)
+                }
+            }
+        }
+    }
 
     public func check(image: UIImage, completion: @escaping (_ result: DetectionResult) -> Void) {
 
